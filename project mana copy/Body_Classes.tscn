@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Project Reaper/Project Reaper/Ninja class.png" type="Texture" id=1]
+[ext_resource path="res://Project Reaper/Project Reaper/Dummy class.png" type="Texture" id=2]
+[ext_resource path="res://Project Reaper/Project Reaper/Maestro class.png" type="Texture" id=3]
+[ext_resource path="res://Project Reaper/Project Reaper/Painter class.png" type="Texture" id=4]
+[ext_resource path="res://Project Reaper/Project Reaper/Scrapslinger  class.png" type="Texture" id=5]
+[ext_resource path="res://Project Reaper/Project Reaper/Sniper class.png" type="Texture" id=6]
+
+[node name="Body_Classes" type="Node2D"]
+
+[node name="Body_Class1" type="Sprite" parent="."]
+position = Vector2( 521, 261 )
+scale = Vector2( 8, 8 )
+texture = ExtResource( 2 )
+hframes = 8
+vframes = 8
+
+[node name="Body_Class2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 521, 261 )
+scale = Vector2( 8, 8 )
+texture = ExtResource( 3 )
+hframes = 8
+vframes = 8
+
+[node name="Body_Class3" type="Sprite" parent="."]
+visible = false
+position = Vector2( 521, 261 )
+scale = Vector2( 8, 8 )
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 8
+
+[node name="Body_Class4" type="Sprite" parent="."]
+visible = false
+position = Vector2( 521, 261 )
+scale = Vector2( 8, 8 )
+texture = ExtResource( 4 )
+hframes = 8
+vframes = 8
+
+[node name="Body_Class5" type="Sprite" parent="."]
+visible = false
+position = Vector2( 521, 261 )
+scale = Vector2( 8, 8 )
+texture = ExtResource( 5 )
+hframes = 8
+vframes = 8
+
+[node name="Body_Class6" type="Sprite" parent="."]
+visible = false
+position = Vector2( 521, 261 )
+scale = Vector2( 8, 8 )
+texture = ExtResource( 6 )
+hframes = 8
+vframes = 8

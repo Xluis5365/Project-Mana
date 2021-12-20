@@ -34,9 +34,9 @@ func _physics_process(delta):
 		motion.y = MAXFALLSPEED
 		
 	if facing_right:
-		$Sprite.scale.x = 1
+		$Body_Sel_Classes.scale.x = 1
 	else:
-		$Sprite.scale.x = -1
+		$Body_Sel_Classes.scale.x = -1
 	
 	motion.x = clamp(motion.x, -MAXSPEED,MAXSPEED)
 	
@@ -87,7 +87,6 @@ func _physics_process(delta):
 	elif Input.is_action_just_released("Stop_time"):
 		cooldown = true
 		GRAVITY = 20
-		$Sprite.rotation_degrees = 0
 	if Input.is_action_just_pressed("dash"):
 		die()
 	

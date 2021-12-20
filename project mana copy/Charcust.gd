@@ -14,7 +14,7 @@ onready var Scrapslinger = $Body_Classes/Body_Class5
 onready var Sniper = $Body_Classes/Body_Class6
 
 var Classes = 1
-var headnames = ['base', 'cop', 'glass']
+var headnames = ['base', 'cop', 'glass' , 'X-Striker' , 'Fragman' , 'true balance' , 'Fuego' , 'Silver Samurai' , 'Alien x' , 'marinist' , 'Heavenly dead' , 'ErR0r' , 'Seruliany' , 'Sprite seed' , 'Daemon Dragoon']
 
 func _physics_process(delta):
 	Head_Change()
@@ -28,6 +28,30 @@ func Head_Change():
 		head_name.text = headnames[1]
 	elif Head.frame == 2:
 		head_name.text = headnames[2]
+	elif Head.frame == 3:
+		head_name.text = headnames[3]
+	elif Head.frame == 4:
+		head_name.text = headnames[4]
+	elif Head.frame == 5:
+		head_name.text = headnames[5]
+	elif Head.frame == 6:
+		head_name.text = headnames[6]
+	elif Head.frame == 7:
+		head_name.text = headnames[7]
+	elif Head.frame == 8:
+		head_name.text = headnames[8]
+	elif Head.frame == 9:
+		head_name.text = headnames[9]
+	elif Head.frame == 10:
+		head_name.text = headnames[10]
+	elif Head.frame == 11:
+		head_name.text = headnames[11]
+	elif Head.frame == 12:
+		head_name.text = headnames[12]
+	elif Head.frame == 13:
+		head_name.text = headnames[13]
+	elif Head.frame == 14:
+		head_name.text = headnames[14]
 	else:
 		head_name.text = "Choose a Head"
 

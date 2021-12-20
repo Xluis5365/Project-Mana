@@ -10,9 +10,6 @@ position = Vector2( -2205.57, -168.936 )
 collision_layer = 2
 collision_mask = 9
 
-[node name="Body_Sel_Classes" parent="Player" index="0"]
-visible = false
-
 [node name="TileMap" type="TileMap" parent="." groups=["Environment"]]
 tile_set = ExtResource( 1 )
 collision_mask = 31

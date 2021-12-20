@@ -44,14 +44,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Body_Classes" parent="." instance=ExtResource( 2 )]
-
 [node name="Head" type="Sprite" parent="."]
 position = Vector2( 505, 245 )
 scale = Vector2( 8, 8 )
 texture = ExtResource( 1 )
 hframes = 32
 vframes = 32
+
+[node name="Body_Classes" parent="." instance=ExtResource( 2 )]
 
 [node name="Left_Head" type="Button" parent="."]
 margin_left = -435.0

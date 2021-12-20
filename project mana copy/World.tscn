@@ -6,15 +6,13 @@
 [node name="World" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
-position = Vector2( -2460.57, 78.0639 )
+position = Vector2( -2384.57, -67.9361 )
 collision_layer = 2
 collision_mask = 9
 
-[node name="Sprite" parent="Player" index="0"]
-position = Vector2( -0.429932, -0.0639038 )
-frame = 23
-
-[node name="TileMap" type="TileMap" parent="." groups=["Environment"]]
+[node name="TileMap" type="TileMap" parent="." groups=[
+"Environment",
+]]
 tile_set = ExtResource( 1 )
 collision_mask = 31
 format = 1

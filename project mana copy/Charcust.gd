@@ -15,11 +15,8 @@ onready var Sniper = $Body_Classes/Body_Class6
 
 var Classes = 1
 var headnames = ['base', 'cop', 'glass' , 'X-Striker' , 'Fragman' , 'true balance' , 'Fuego' , 'Silver Samurai' , 'Alien x' , 'marinist' , 'Heavenly dead' , 'ErR0r' , 'Seruliany' , 'Sprite seed' , 'Daemon Dragoon']
-
-func _physics_process(delta):
-	Head_Change()
-	Classes_Change()
-	print(Classes)
+var Class_number = 0
+var head_number
 
 func Head_Change():
 	if Head.frame == 0:
@@ -103,3 +100,18 @@ func _on_Right_Body_pressed():
 		Classes += 1
 	elif Classes <= 5:
 		Classes += 1
+
+signal Char_Settings
+
+func _physics_process(delta):
+	Head_Change()
+	Classes_Change()
+	
+	head_number = str(Head.frame)
+	
+	Class_number = Classes
+
+func _on_Button_pressed():
+	emit_signal("Char_Settings", Class_number, head_number)
+	print("signal emitting")
+	get_tree().change_scene("res://World.tscn")

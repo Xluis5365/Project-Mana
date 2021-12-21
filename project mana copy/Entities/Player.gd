@@ -17,17 +17,17 @@ export(int) var defense: int = 0
 var Bullet = preload("res://Bullet.tscn")
 var cooldown = true
 
-
 onready var time_label = $TextureRect/Value
 
 
 func _ready() -> void:
 	self.position = Global.spawn_point
+	var Number_Receiver = get_tree().get_root().find_node("Charcust", true, false)
+	Number_Receiver.connect("Char_Settings", self, "Handle_Charcust")
 
-
-func _physics_process(delta):
-
-
+func Handle_Charcust(Class_number, head_number):
+	print(Class_number)
+	print(head_number)
 
 	motion.y += GRAVITY
 	if motion.y > MAXFALLSPEED:
